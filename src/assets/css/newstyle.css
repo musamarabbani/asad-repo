@@ -1,0 +1,195 @@
+.header_btn {
+  display: flex;
+  gap: 10px;
+}
+.btn_signUp {
+  border-radius: 14px !important;
+  position: static;
+  width: 100px;
+  height: 42px;
+
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Poppins';
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  background: linear-gradient(93.61deg, #5c8fff -3.91%, #c14bff 98.39%);
+  border: none;
+}
+.btn_signUp:hover {
+  background: linear-gradient(93.61deg, #c14bff -3.91%, #c14bff 98.39%);
+  color: white;
+}
+.btn_signIn {
+  position: static;
+  width: 100px;
+  height: 42px;
+  align-items: center;
+  text-align: center;
+  font-family: 'Poppins';
+  /* line-height: 15px; */
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 14px;
+  justify-content: 'center';
+}
+.btn_signIn :hover {
+  box-shadow: white;
+}
+/* 
+--------------------------gradient button */
+.effect {
+  width: 100px;
+  height: 42px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  border-radius: 14px !important;
+  display: inline-block;
+  box-shadow: -1px 0 0 1px rgba(61, 173, 233, 0.75),
+    -1px -1px 0 1px rgba(94, 142, 226, 0.25),
+    -1px -1px 0 1px rgba(94, 142, 226, 0.25),
+    0px -1px 0 1px rgba(126, 110, 218, 0.5),
+    0px 1px 0 1px rgba(126, 110, 218, 0.5),
+    1px -1px 0 1px rgba(159, 79, 211, 0.25),
+    1px 1px 0 1px rgba(159, 79, 211, 0.25), 1px 0 0 1px rgba(197, 47, 203, 0.75);
+  background: -webkit-linear-gradient(93.61deg, #5c8fff -3.91%, #c14bff 98.39%);
+  color: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  padding-top: 11px;
+}
+.effect:hover {
+  box-shadow: -1px 0 0 1px rgba(193, 75, 255, 1),
+    1px 0 0 1px rgba(193, 75, 255, 1);
+  /* background: -webkit-linear-gradient(93.61deg, #5c8fff -3.91%, #c14bff 98.39%); */
+}
+a {
+  text-decoration: none;
+}
+
+.login_titleText {
+  font-size: 24px;
+}
+.forgot {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+  background: linear-gradient(46.27deg, #5c8fff 0%, #c14bff 86.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-top: -1px !important;
+}
+.forgot:hover {
+  background: linear-gradient(46.27deg, #c14bff 0%, #c14bff 86.58%);
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main_or {
+  flex: none;
+  display: flex;
+  flex-direction: row;
+  order: 3;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 18px 0px 0px 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+.pixel_line {
+  height: 1px;
+  background-color: #0f172a;
+  border: none;
+  width: 50%;
+}
+.main_socialIcon {
+  display: flex;
+  order: 4;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 21.0561px 0px 0px 0px;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 8.42244px;
+}
+.icon_box {
+  display: flex;
+  padding: 0px;
+  position: static;
+  height: 42.11px;
+  left: 225.62px;
+  top: 0px;
+  flex-grow: 1;
+  background: #0f172a;
+  /* blueGray/900 */
+  border: 1.05281px solid #0f172a;
+  box-sizing: border-box;
+  border-radius: 10.5281px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.icon_box:hover {
+  cursor: pointer;
+  background: #1e293b;
+  opacity: 0.5;
+  border: none;
+  border: 1.05281px solid #0f172a;
+}
+
+.direct_login {
+  display: flex;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  /* identical to box height, or 21px */
+
+  text-align: center;
+  letter-spacing: 0.2px;
+
+  /* Neutral/50 */
+
+  color: #ffffff;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.direct_logintxt {
+  order: 5;
+  margin: 18px 0px 0px 0px;
+  justify-content: center;
+}
+
+.login_subtitle {
+  letter-spacing: 0.2px;
+  color: #c4d2df;
+  position: static;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+  top: 38px;
+  flex: none;
+  align-self: stretch;
+  flex-grow: 0;
+  order: 1;
+  margin: 8px 0px 0px 0px;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}

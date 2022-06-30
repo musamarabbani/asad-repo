@@ -1,0 +1,11 @@
+:root {
+  --bg-blueGray: #442445;
+  --bg-lightBlueGray: #1e293b;
+  --bg-primary: #5c8fff;
+  --bg-secondary: #c14bff;
+  --bg-purpleBlueGradient: linear-gradient(
+    93.61deg,
+    #5c8fff -3.91%,
+    #c14bff 98.39%
+  );
+}

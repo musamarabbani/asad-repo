@@ -1,0 +1,109 @@
+.btn_forgot {
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 15px 0px 0px 0px;
+}
+.loginfeild_control {
+  padding-left: 45px !important;
+  background-color: #0f172a;
+  width: 100% !important;
+  border: 1px solid #506375;
+  box-sizing: border-box !important;
+  border-radius: 12px !important;
+  height: 56px;
+  /* box-shadow: none !important; */
+  font-family: 'Poppins';
+  font-size: 13px;
+}
+.loginfeild-control_border {
+  border: 2px solid red;
+}
+
+.login_activeinputfeild_text {
+  color: #ffffff !important;
+}
+.login_inputfeild_txt {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+  color: #6c7e8e;
+}
+.form-label {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+
+.icon_inputfield {
+  display: flex !important;
+  flex: 0 !important;
+  flex-direction: row !important;
+  align-items: center !important;
+}
+.mail_icon {
+  display: flex;
+  flex: auto;
+  left: 8%;
+  align-content: center;
+  position: relative;
+  align-items: center;
+  /* background-color: #0f172a !important;
+
+  border: 1px solid #506375 !important;
+  box-sizing: border-box !important;
+  border-radius: 12px !important;
+  height: 56px;
+  */
+}
+.icon_position {
+  position: absolute;
+  left: 65px !important;
+}
+.iconeye_position {
+  position: absolute;
+  right: 65px !important;
+}
+.input:focus {
+  outline: none;
+}
+.box_shadow {
+  box-shadow: none !important ;
+}
+.loginfeild_control_gradient_border {
+  -webkit-background-clip: text;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(21deg, #5c8fff -3.91%, #c14bff 98.39%);
+  /* box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5); */
+  border: solid 2px transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #0f172a inset;
+}
+.loginfeild_error_txt {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+  color: #e8503a;
+}
+.iconeye_position_color {
+  fill: red !important;
+}
+.red_border {
+  border: solid 2px #e8503a;
+}
+.Iconlock_color {
+  fill: red !important;
+}
