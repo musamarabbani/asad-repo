@@ -1,16 +1,11 @@
 import React from 'react';
 import SignupForm from '../components/SignupForm';
-import LoginHeader from '../components/LoginHeader';
-import { useNavigate } from 'react-router-dom';
 import '../assets/css/newstyle.css';
 
 const CoachSignUp = () => {
-	const navigate = useNavigate();
-
 	return (
 		<div className='main-container'>
-			<LoginHeader />
-			<div className='login_container '>
+			<div className='mt-5 login_container'>
 				<div className='col-10 col-lg-4 col-md-6 col-xxl-4 content_center'>
 					<div className='card login_card d-flex'>
 						<span className='login_titleText'>Create Account</span>

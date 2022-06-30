@@ -1,18 +1,21 @@
 import React, { useEffect, useState } from 'react';
-import '../assets/css/loginform.css';
 import EmailField from './loginfields/EmailField';
 import PasswField from './loginfields/PasswField';
 import { useNavigate } from 'react-router-dom';
 import ConfirmPasswField from './loginfields/ConfirmPasswField';
 import { Spinner } from 'reactstrap';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 import { FullName } from './loginfields/FullName';
-import 'react-toastify/dist/ReactToastify.css';
 import { showToast } from '../notify/ShowToast';
+import { homePageAction } from '../redux/actions/actions';
+import { useDispatch } from 'react-redux';
+import 'react-toastify/dist/ReactToastify.css';
+import '../assets/css/loginform.css';
 
 const SignupForm = (props) => {
 	const navigate = useNavigate();
+	const dispatch = useDispatch();
+
 	const initialValues = { name: '', email: '', password: '', confirmPass: '' };
 	const [formValues, setFormValues] = useState(initialValues);
 	const [formErrors, setFormErrors] = useState({});
@@ -40,16 +43,12 @@ const SignupForm = (props) => {
 		setIsSubmit(true);
 	};
 	useEffect(() => {
-		console.log(formErrors);
 		if (Object.keys(formErrors).length === 0 && isSubmit) {
-			console.log(formValues);
-			// setbtnDisable(true)
+			console.log({ formValues });
 			onSuccessSubmit();
-			// setSignupbtnLabel(false)
-		} else {
-			showToast('error', 'Input fileds data are missing.');
 		}
 	}, [formErrors]);
+
 	const validate = (values) => {
 		const errors = {};
 		const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
@@ -96,6 +95,10 @@ const SignupForm = (props) => {
 		} else {
 			setbtnBorderConfirmPass(false);
 		}
+		console.log('errors', errors);
+		if (Object.keys(errors).length > 0) {
+			showToast('error', 'Input fileds data are not appropriate');
+		}
 		return errors;
 	};
 	const active = (value) => {
@@ -104,7 +107,8 @@ const SignupForm = (props) => {
 	const onSuccessSubmit = () => {
 		setSpinner(false);
 		showToast('success', 'Registered Succesfully ');
-		console.log(formValues.name, formValues.email, formValues.password);
+		dispatch(homePageAction({ formValues }));
+		navigate('/posts');
 	};
 
 	return (
