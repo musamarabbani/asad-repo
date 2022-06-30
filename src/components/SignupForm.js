@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '../../assets/css/loginform.css';
+import '../assets/css/loginform.css';
 import EmailField from './loginfields/EmailField';
 import PasswField from './loginfields/PasswField';
 import { useNavigate } from 'react-router-dom';
@@ -9,7 +9,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FullName } from './loginfields/FullName';
 import 'react-toastify/dist/ReactToastify.css';
-import { showToast } from '../../notify/ShowToast';
+import { showToast } from '../notify/ShowToast';
 
 const SignupForm = (props) => {
 	const navigate = useNavigate();
