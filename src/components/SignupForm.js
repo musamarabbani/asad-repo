@@ -9,7 +9,7 @@ import { FullName } from './loginfields/FullName';
 import { showToast } from '../notify/ShowToast';
 import { homePageAction } from '../redux/actions/actions';
 import { useDispatch } from 'react-redux';
-import 'react-toastify/dist/ReactToastify.css';
+
 import '../assets/css/loginform.css';
 
 const SignupForm = (props) => {

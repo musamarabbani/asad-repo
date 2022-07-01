@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import PostPage from './screens/PostsPage';
 import './assets/css/combine.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 import CoachSignUp from './screens/SignUp';
 

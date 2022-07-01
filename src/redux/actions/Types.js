@@ -1,1 +1,3 @@
 export const SUBMIT_HOME_DATA = 'SUBMIT_HOME_DATA';
+export const FETCH_POST_DATA = 'FETCH_POST_DATA';
+export const ADD_POST_DATA = 'ADD_POST_DATA';
